@@ -1,0 +1,164 @@
+$darkblue: #001118;
+$blue: #002f43;
+$white: #fff;
+$grey: #999;
+body {
+	padding: 0;
+	margin: 0;
+
+	background: #002F43 url(../images/bg01.jpg) repeat-x;
+	background-size: stretch;
+	color: $white;
+
+	font-family: 'Trebuchet MS';
+}
+header {
+	position: relative;
+	width: 850px;
+	height: 150px;
+	margin: 0 auto;
+	h1 {
+		float: left;
+		padding: 50px 0;
+
+		font-size: 40px;
+	}
+	h5 {
+		float: right;
+		padding: 75px 0;
+		
+		font-size: 14px;
+	}
+	a {
+		text-decoration: none;
+		color: $white;
+	}
+	span {
+		position: relative; 
+		top: -15px;
+
+		font-size: 32px;
+		font-weight: 400;
+	}
+}
+.main-container {
+	width: 890px;
+	height: 340px;
+	margin: 0 auto;
+	padding-top: 80px;
+
+	position: relative;
+
+	border-left: 3px solid $grey;
+	border-right: 3px solid $grey;
+	border-bottom: 3px solid $grey;
+	border-radius: 50px 50px 40px 40px;
+
+	background: #101010;
+	box-shadow: 40px -20px 110px -30px #027EB2,
+				-40px -20px 110px -30px #027EB2;
+}
+.nav-container {
+	width: 895px;
+	height: 80px;
+
+	background: -webkit-linear-gradient(top, lighten($blue, 25%), #012C3F 50%);
+
+	position: absolute;
+	top: -5px;
+	left: -5px;
+
+	border: 3px solid silver;
+	border-radius: 50px;
+	.nav {
+		width: 100%;
+
+		line-height: 50px;
+		li {
+			display: inline;
+			padding: 0 28px 0 15px;
+		}
+		a {
+			text-decoration: none;
+			color: $white;
+			font-weight: 800;
+		}
+	}
+}
+.inner-container {
+	margin: 0 auto;
+	width: 830px;
+}
+.title {
+	width: 100%;
+	height: 50px;
+	margin-top: 40px;
+	
+	background: -webkit-linear-gradient(bottom, #282828, #0b0b0b 60%);
+
+	line-height: 50px;
+
+	border-radius: 20px;
+	box-shadow: 1px -1px 1px #333;
+
+	a {
+		padding-left: 20px;
+
+		text-decoration: none;
+		color: $white;
+		font-size: 24px;
+		font-weight: 800;
+		&:hover {
+			color: #8AC800;
+		}
+	}
+	h4 {
+		font-size: 14px;
+		padding-left: 20px;
+	}
+}
+.intro, .sidebar-news {
+	font-size: 12px;
+	color: #b9b9b9;
+}
+.content {
+	width: 69%;
+	float: left;
+}
+.intro {
+	margin-top: 30px;
+	img {
+		float: left;
+		height: 125px;
+		width: 125px;
+
+		padding: 5px 22px;
+	}
+	p {
+		line-height: 20px;
+		padding: 0 15px 10px;
+	}
+}
+
+.sidebar {
+	float: right;
+	width: 28%;
+}
+.sidebar-news {
+	list-style: none;
+	padding: 0 20px;
+	li {
+		padding: 10px 0 10px;
+		line-height: 20px;
+	}
+}
+
+footer {
+	padding-top: 20px;
+
+	text-align: center;
+	span {
+		font-size: 12px;
+		color: #566D77;
+	}
+}
